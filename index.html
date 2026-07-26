@@ -1,308 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Erik Phi Nguyen</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Erik Phi Nguyen — Project Engineer &amp; Full-Stack Software Engineer</title>
+  <meta name="description" content="Erik Phi Nguyen — Project Engineer at Boeing EnCore Interiors and full-stack software engineer. Aerospace quality systems, chemical engineering, and code." />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link href="css/styles.css" rel="stylesheet" />
 </head>
-
 <body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="#page-top">Home</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
-                </ul>
-            </div>
+
+  <!-- ============ NAV ============ -->
+  <nav id="mainNav" class="nav">
+    <div class="nav__inner">
+      <a href="#page-top" class="nav__brand">EPN<span class="nav__brand-dot">.</span></a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="hero">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow"><span class="eyebrow__tick"></span>PROJECT ENGINEER — BOEING ENCORE INTERIORS</p>
+        <h1 class="hero__title">Erik Phi Nguyen</h1>
+        <p class="hero__subtitle">
+          I keep aircraft interiors airworthy by day and build personal projects by night —
+          same engineering rigor, two very different materials.
+        </p>
+        <div class="hero__actions">
+          <a href="assets/nguyen-erik-resume.pdf" class="btn btn--primary" download>
+            Download Résumé
+          </a>
+          <a href="#contact" class="btn btn--ghost">Get in Touch</a>
         </div>
-    </nav>
-    <!-- Masthead-->
-    <header class="masthead">
-        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-            <div class="d-flex justify-content-center">
-                <div class="text-center">
-                    <h1 class="mx-auto my-0 text-uppercase">Erik Phi Nguyen</h1>
-                    <h2 class="text-white-50 mx-auto mt-2 mb-5">Full-Stack Software Engineer <br>&& Chemical
-                        Engineer</h2>
-                    <a class="btn btn-primary" href="assets/nguyen-erik-resume.pdf">Resume</a>
-                </div>
-            </div>
+        <div class="hero__socials">
+          <a href="https://www.linkedin.com/in/erikphinguyen/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.15 1.45-2.15 2.94v5.66H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          </a>
+          <a href="https://github.com/erikphinguyen" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.4 9.4 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+          </a>
+          <a href="mailto:erikphinguyen97@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13zm2.2.2 7.6 6.08a1 1 0 0 0 1.2 0l7.6-6.08H4.2zM20 7.1l-7.02 5.62a2.5 2.5 0 0 1-3.02 0L3 7.1v11.4c0 .28.22.5.5.5h15c.28 0 .5-.22.5-.5V7.1z"/></svg>
+          </a>
         </div>
-    </header>
-    <!-- About-->
-    <section class="about-section text-center" id="about">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8">
-                    <h2 class="text-white mb-4">Innovative Engineer and Problem Solver</h2>
-                    <p class="text-white-50">
-                        My journey spans diverse fields—from conducting water quality research at Stanford University to
-                        driving efficiency and excellence in the aerospace and beauty industries as a Quality Engineer,
-                        and finally, to building innovative web applications as a Full-Stack Software Engineer. Each
-                        role has honed my problem-solving skills, technical expertise, and passion for continuous
-                        learning.
-                        <br><br>
-                        Whether optimizing electronic Quality Management Systems to save $480k annually, revitalizing
-                        critical projects to secure multimillion-dollar deals, or architecting scalable APIs for modern
-                        web applications, I thrive at the intersection of technology and innovation. My career is driven
-                        by a commitment to improving processes, enhancing user experiences, and delivering impactful
-                        solutions.
-                        <br><br>
-                        When I’m not solving complex technical challenges, you’ll find me staying active—whether hitting
-                        the gym, hiking, or seeking adrenaline in the snow or water. I draw inspiration from the
-                        dopamine rush of tackling challenges head-on, whether it’s nailing a tough workout or debugging
-                        a stubborn issue in my code. This relentless pursuit of excellence fuels my personal and
-                        professional growth.
-                        <br><br>
-                        I’m constantly looking for opportunities to expand my skillset and
-                        collaborate with others to build better, smarter, and more efficient systems.
-                    </p>
-                    <h2 class="text-white mb-4">Technical Skills</h2>
-                    <p class="text-white-50">
-                        <strong>Languages:</strong> JavaScript, TypeScript, Python, GraphQL, SQL, HTML5, CSS3, MATLAB,
-                        DAX<br>
-                        <strong>Frameworks/Tools:</strong> PowerBI, React, Redux, Node.js, Express.js, Next.js, Flask,
-                        Sequelize, SQLAlchemy, PostgreSQL, AWS (S3, Lambda, Amplify, DynamoDB), Docker, Websockets,
-                        Mocha, Chai, Playwright, AutoCAD, LabVIEW, Pro II, Microsoft Office<br>
-                        <strong>Version Control:</strong> Git, GitHub<br>
-                        <strong>Key Skills:</strong> Pair Programming, Test-Driven Development, Object-Oriented
-                        Programming, Agile/Scrum Methodologies, Lean Methodologies, Root Cause Analysis
-                    </p>
+      </div>
 
-                </div>
-            </div>
-            <!-- <img class="img-fluid" src="assets/img/tech-stack-image.jpg" alt="tech stack" /> -->
+      <div class="hero__block">
+        <div class="titleblock" role="img" aria-label="Engineering drawing title block summarizing Erik's role">
+          <div class="titleblock__row titleblock__row--head">
+            <span class="titleblock__label">TITLE</span>
+            <span class="titleblock__value titleblock__value--name">ERIK PHI NGUYEN</span>
+          </div>
+          <div class="titleblock__row">
+            <span class="titleblock__label">DISCIPLINES</span>
+            <span class="titleblock__value">Project/Programs · Software <br>· Quality · Chemical Eng.</br></span>
+          </div>
+          <div class="titleblock__row">
+            <span class="titleblock__label">CURRENT ROLE</span>
+            <span class="titleblock__value">Project Engineer, Boeing EnCore Interiors</span>
+          </div>
+          <div class="titleblock__row">
+            <span class="titleblock__label">LOCATION</span>
+            <span class="titleblock__value">Orange County, CA</span>
+          </div>
+          <div class="titleblock__row">
+            <span class="titleblock__label">STATUS</span>
+            <span class="titleblock__value titleblock__value--status">
+              <span class="status-dot"></span>Building what's next
+            </span>
+          </div>
+          <div class="titleblock__row titleblock__row--stack">
+            <span class="titleblock__label">TECHNOLOGIES</span>
+            <span class="titleblock__value">JS · TS · Python · React <br>· Node · SQL · AWS · Power BI</br></span>
+          </div>
+          <div class="titleblock__corner titleblock__corner--tl"></div>
+          <div class="titleblock__corner titleblock__corner--tr"></div>
+          <div class="titleblock__corner titleblock__corner--bl"></div>
+          <div class="titleblock__corner titleblock__corner--br"></div>
         </div>
-    </section>
-    <!-- Projects-->
-    <section class="projects-section bg-light" id="projects">
-        <div class="container px-4 px-lg-5">
-            <!-- Featured Project Row-->
-            <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0"
-                        src="assets/img/wearbnb-landing-page.png" alt="wearbnb" /></div>
-                <div class="col-xl-4 col-lg-5">
-                    <div class="featured-text text-center text-lg-left">
-                        <h4>wearbnb</h4>
-                        <p class="text-black-50 mb-0">wearbnb is a web application modeled after the famous Airbnb.
-                            Users are able to interact with their favorite brands, whether it may be booking their
-                            favorite brand or even writing reviews.</p>
-                        <a class="text-black-50 mb-0" href="https://wearbnb-erik-nguyen.herokuapp.com/">Visit Live
-                            Site</a>
-                        <a class="text-black-50 mb-0" href="https://github.com/erikphinguyen/wearbnb">Visit GitHub
-                            Repo</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Project Row-->
-            <div class="row gx-0 justify-content-center">
-                <div class="col-lg-6"><img class="img-fluid h-100" src="assets/img/accord-landing-page.PNG"
-                        alt="Accord" /></div>
-                <div class="col-lg-6 order-lg-first">
-                    <div class="bg-black text-center h-100 project">
-                        <div class="d-flex h-100">
-                            <div class="project-text w-100 my-auto text-center text-lg-right">
-                                <h4 class="text-white">Accord</h4>
-                                <p class="mb-0 text-white-50">Accord is a clone of the popular text chat app, Discord.
-                                    Users familiar of Discord are able to log in and enjoy similar functionalities as
-                                    Discord such as creating servers, making channels, messaging other users, and much
-                                    more!</p>
-                                <a class="mb-0 text-white-50" href="https://accord-flask-react.herokuapp.com/">Visit
-                                    Live
-                                    Site</a>
-                                <a class="mb-0 text-white-50"
-                                    href="https://github.com/kevin9gao/accord-flask-react-project">Visit
-                                    GitHub Repo</a>
-                                <hr class="d-none d-lg-block mb-0 me-0" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Project One Row-->
-            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                <div class="col-lg-6"><img class="img-fluid h-100"
-                        src="assets/img/inspirational-quote-generator-landing-page.png"
-                        alt="Inspirational Quote Generator" />
-                </div>
-                <div class="col-lg-6">
-                    <div class="bg-black text-center h-100 project">
-                        <div class="d-flex h-100">
-                            <div class="project-text w-100 my-auto text-center text-lg-left">
-                                <h4 class="text-white">Inspirational Quote Generator</h4>
-                                <p class="mb-0 text-white-50">An inspirational quote generator is a web application that
-                                    generates uplifting and motivational quotes to inspire and motivate users.
-                                    It provides a quick and easy way for users to access a curated collection of
-                                    inspirational quotes, with the option to download their favorite quotes for personal
-                                    use or sharing with others.</p>
-                                <a class="mb-0 text-white-50" href="https://prod.d3q5js4u8nirl5.amplifyapp.com/">Visit
-                                    Live Site</a>
-                                <a class="mb-0 text-white-50"
-                                    href="https://github.com/erikphinguyen/inspirational-quote-generator">Visit GitHub
-                                    Repo</a>
-                                <hr class="d-none d-lg-block mb-0 ms-0" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Project Two Row-->
-            <div class="row gx-0 justify-content-center">
-                <div class="col-lg-6"><img class="img-fluid h-100" src="assets/img/grocery-list-landing-page.png"
-                        alt="Grocery List" /></div>
-                <div class="col-lg-6 order-lg-first">
-                    <div class="bg-black text-center h-100 project">
-                        <div class="d-flex h-100">
-                            <div class="project-text w-100 my-auto text-center text-lg-right">
-                                <h4 class="text-white">Grocery List</h4>
-                                <p class="mb-0 text-white-50">Grocery List is a to-do application that allows users to
-                                    create and
-                                    manage their grocery lists. The app features an intuitive user interface with
-                                    drag-and-drop
-                                    functionality and checkboxes to mark tasks as complete.</p>
-                                <a class="mb-0 text-white-50" href="https://grocery-list-kjuu.onrender.com/">Visit Live
-                                    Site</a>
-                                <a class="mb-0 text-white-50" href="https://github.com/erikphinguyen/grocery-list">Visit
-                                    GitHub Repo</a>
-                                <hr class="d-none d-lg-block mb-0 me-0" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Project Three Row-->
-            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                <div class="col-lg-6"><img class="img-fluid h-100" src="assets/img/liqr-landing-page.PNG" alt="liqr" />
-                </div>
-                <div class="col-lg-6">
-                    <div class="bg-black text-center h-100 project">
-                        <div class="d-flex h-100">
-                            <div class="project-text w-100 my-auto text-center text-lg-left">
-                                <h4 class="text-white">liqr</h4>
-                                <p class="mb-0 text-white-50">liqr is a clone of the web application, Flickr. Users are
-                                    able to have a general sense of community with other users that enjoy
-                                    refreshing cocktails! Users can interact with cocktails on the page, whether they
-                                    may want to
-                                    comment or even post about their own cocktail!</p>
-                                <a class="mb-0 text-white-50" href="https://liqr.onrender.com/">Visit Live Site</a>
-                                <a class="mb-0 text-white-50"
-                                    href="https://github.com/erikphinguyen/liqr-solo-project">Visit GitHub Repo</a>
-                                <hr class="d-none d-lg-block mb-0 ms-0" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
+    <a href="#about" class="hero__scroll" aria-label="Scroll to About section">
+      <span></span>
+    </a>
+  </header>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section section--about" id="about">
+    <div class="section__inner">
+      <p class="section__eyebrow">01 — ABOUT</p>
+      <h2 class="section__title">One engineering mindset, three disciplines.</h2>
+
+      <div class="about__grid">
+        <div class="about__copy">
+          <p>
+            My path started in a chemical engineering lab, running water-filtration experiments at
+            Stanford University, and has taken me through aerospace and medical-device quality systems into
+            full-stack software development. Each stop added a different lens for solving problems:
+            process rigor from chemical engineering, root-cause discipline from quality engineering,
+            and systems thinking from writing code.
+          </p>
+          <p>
+            At Alloy Processing, I revived a five-year-dormant certification project and closed it within a single quarter, securing
+            $500K/year in new business. At Hydrafacial, I rebuilt the electronic quality management system and cut unnecessary
+            user accounts by 80%, saving the company $480K a year. Today, at Boeing EnCore Interiors, I manage roughly 100
+            concurrent supplier change notices across 50+ active and legacy aircraft interior
+            programs — keeping commercial interiors airworthy and in production.
+          </p>
+          <p>
+            Outside of engineering, I'm usually at the gym, on a trail, or on a snowboard. I like
+            problems with a clear finish line, whether that's a workout, a hike, or a stubborn bug.
+          </p>
         </div>
-    </section>
-    <!-- Signup-->
-    <section class="signup-section" id="signup">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5">
-                <div class="col-md-10 col-lg-8 mx-auto text-center">
-                    <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                    <h2 class="text-white mb-5">Contact Me!</h2>
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- * * SB Forms Contact Form * *-->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- This form is pre-integrated with SB Forms.-->
-                    <!-- To make this form functional, sign up at-->
-                    <!-- https://startbootstrap.com/solution/contact-forms-->
-                    <!-- to get an API token!-->
-                </div>
-            </div>
+
+        <div class="about__path" aria-hidden="true">
+          <div class="path__node">
+            <span class="path__year">2015–20</span>
+            <span class="path__label">Chemical Engineering</span>
+            <span class="path__sub">UC Riverside → CSULB, Stanford Research</span>
+          </div>
+          <div class="path__connector"></div>
+          <div class="path__node">
+            <span class="path__year">2021–25</span>
+            <span class="path__label">Quality Engineer</span>
+            <span class="path__sub">Valence · Alloy Processing · Hydrafacial</span>
+          </div>
+          <div class="path__connector"></div>
+          <div class="path__node">
+            <span class="path__year">2022–Now</span>
+            <span class="path__label">Full-Stack Software Engineer</span>
+            <span class="path__sub">App Academy → Freelance → Personal Projects</span>
+          </div>
+          <div class="path__connector"></div>
+          <div class="path__node path__node--current">
+            <span class="path__year">2025–Now</span>
+            <span class="path__label">Project Engineer</span>
+            <span class="path__sub">Boeing EnCore Interiors</span>
+          </div>
         </div>
-    </section>
-    <!-- Contact-->
-    <section class="contact-section bg-black">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5">
-                <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card py-4 h-100">
-                        <div class="card-body text-center">
+      </div>
+    </div>
+  </section>
 
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section section--experience" id="experience">
+    <div class="section__inner">
+      <p class="section__eyebrow">02 — EXPERIENCE</p>
+      <h2 class="section__title">Where I've built and shipped.</h2>
 
-                            <i class="fa-brands fa-linkedin"></i>
-                            <br>
-                            <h4 class="text-uppercase m-0">
-                                <a class="card-links" href="https://www.linkedin.com/in/erikphinguyen/">LinkedIn</a>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card py-4 h-100">
-                        <div class="card-body text-center">
+      <ol class="timeline">
+        <li class="timeline__item">
+          <div class="timeline__date">Jul 2025 — Present</div>
+          <div class="timeline__content">
+            <h3 class="timeline__role">Project Engineer <span class="timeline__co">· Boeing EnCore Interiors</span></h3>
+            <ul class="timeline__bullets">
+              <li>Ensure airworthiness of commercial airplane interior components (front row monuments, galleys, and related systems) by managing
+a high-volume portfolio of ~100 concurrent Supplier Change Notices (SCNs) across 50+ active and legacy programs, driving
+technical evaluation and disposition of ~50 new changes/month to protect production continuity and in-service fleet support.
+</li>
+              <li>Lead cross-functional integration across design, stress, flammability, and manufacturing disciplines for Boeing 737/787 platform
+programs, establishing project timelines, resolving technical conflicts, and driving engineering change closure — directly
+supporting delivery stream sustainability and program compliance without direct authority</li>
+              <li>Spearheaded cross-functional mitigation of a 2-year dormant obsolescence issue following supplier bankruptcy for a legacy
+interior component, performing material equivalency and form/fit/function analysis, coordinating stress validation and qualification
+testing to return the affected configuration to airworthy status.
+</li>
+            </ul>
+          </div>
+        </li>
 
+        <li class="timeline__item">
+          <div class="timeline__date">May 2024 — Jul 2025</div>
+          <div class="timeline__content">
+            <h3 class="timeline__role">Quality Systems Engineer <span class="timeline__co">· Hydrafacial</span></h3>
+            <ul class="timeline__bullets">
+              <li>Independently managed and optimized the electronic Quality Management System (eQMS), configuring stringent criteria for user
+access to MasterControl, reducing unnecessary accounts by 80%, thus saving the company $480k annually.
+</li>
+              <li>Directed the shift from a paper-based workflows (e.g ECO, Adverse Events, CAPA, etc.) to MasterControl's Advanced Quality Event
+Management (AQEM), streamlining workflows and boosting efficiency by 50% through quicker inter-departmental collaboration.
+</li>
+              <li>Centralized and maintained Design History Files (DHFs) for company products, streamlining data retrieval at every stage of the
+design process and improving audit efficiency by 33% through clear, organized presentation of all relevant data.
+</li>
+<li>Enhanced the Quality Department’s data analysis by upgrading Power BI dashboards and writing DAX expressions to create legacy
+Measures, improving data accuracy and boosting user efficiency by 95% in identifying deliverables.
+</li>
+            </ul>
+          </div>
+        </li>
 
-                            <i class="fa-brands fa-github"></i>
-                            <br>
-                            <h4 class="text-uppercase m-0">
-                                <a class="card-links" href="https://github.com/erikphinguyen">GitHub</a>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card py-4 h-100">
-                        <div class="card-body text-center">
+        <li class="timeline__item">
+          <div class="timeline__date">Aug 2023 — Feb 2024</div>
+          <div class="timeline__content">
+            <h3 class="timeline__role">Quality Engineer <span class="timeline__co">· Alloy Processing</span></h3>
+            <ul class="timeline__bullets">
+              <li>Revitalized a critical ongoing/abandoned 5-year project for chemical processing approval for Bombardier Aerospace, completing it
+within the first quarter of tenure – this achievement secured $500k/year of work for the company over 3 years.
+</li>
+              <li>Strengthened the Quality Management System (QMS) by meticulously reviewing and revising over 50 Standard Operating Procedures(SOPs) resulting in a 95% reduction in non-conforming findings from external auditors.
+</li>
+              <li>Maintained 100% customer retention by meticulously crafting qualification packages demonstrating compliance with specifications
+and promptly addressing non-conformance reports (NCRs) in order to foster high-quality standards and strong client relationships.
+</li>
+            </ul>
+          </div>
+        </li>
 
+        <li class="timeline__item">
+          <div class="timeline__date">Sep 2022 — Aug 2023</div>
+          <div class="timeline__content">
+            <h3 class="timeline__role">Software Engineer <span class="timeline__co">· Freelance</span></h3>
+            <ul class="timeline__bullets">
+              <li>Designed and built responsive websites, optimizing them for fast loading times and seamless user experience by employing image
+compression techniques, lazy loading, and asynchronous scripting to achieve a 30% improvement in page load speed.
+</li>
+              <li>Developed RESTful APIs and integrated them with the frontend using Node.js and Express.js, significantly reducing data retrieval
+times and server response delays, leading to a 40% improvement in application performance.
+</li>
+              <li>Utilized SQL and database optimization techniques to refactor complex queries in a data-intensive application, reducing query
+execution times by 50% and enhancing overall data retrieval efficiency.
+</li>
+            </ul>
+          </div>
+        </li>
 
-                            <i class="fa-brands fa-angellist"></i>
-                            <br>
-                            <h4 class="text-uppercase m-0">
-                                <a class="card-links" href="https://angel.co/u/erik-nguyen-1">wellfound</a>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
+        <li class="timeline__item">
+          <div class="timeline__date">Contract 2021 — 2022</div>
+          <div class="timeline__content">
+            <h3 class="timeline__role">Quality Administrator <span class="timeline__co">· Valence Surface Technologies</span></h3>
+            <ul class="timeline__bullets">
+              <li>Enhanced overall efficiency and turn-around by providing training to a team of operators on advanced anodizing techniques, such as
+utilizing current rather than voltage for hard coat anodize, to produce parts for reputable aerospace companies such as SpaceX</li>
+              <li>Contributed to significant cost savings for the company by conducting over 100 non-conformance reports, implementing quality
+control measures in-house and supervising operators on a regular basis to reduce errors</li>
+              <li>Developed and implemented automated Pareto charts that were utilized by all departments resulting in significant time savings and
+providing consistent company error reports and error percentages.
+</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="timeline__item">
+          <div class="timeline__date">Mar 2019 — Apr 2020</div>
+          <div class="timeline__content">
+            <h3 class="timeline__role">Water Quality Research Assistant <span class="timeline__co">· Stanford University</span></h3>
+            <ul class="timeline__bullets">
+              <li>Designed and executed controlled filtration experiments across columns of varying oxidation states and media (bio-charcoal, sand,
+and manganese oxide sand), systematically analyzing water quality indicators such as turbidity, flow rates, and tracer test results.
+</li>
+              <li>Performed daily sampling, data collection, and analysis of treated water while identifying and resolving operational issues — such as
+inadequate column flow rates — to maintain experimental integrity and research continuity</li>
+              <li>Conducted extensive literature reviews to inform experimental methodology and contributed findings through structured
+documentation, supporting the broader research team's objectives with consistent, accurate data reporting.
+</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section section--projects" id="projects">
+    <div class="section__inner">
+      <p class="section__eyebrow">03 — PROJECTS</p>
+      <h2 class="section__title">Things I've shipped for fun.</h2>
+
+      <div class="projects__grid">
+
+        <article class="project-card">
+          <div class="project-card__thumb" aria-hidden="true">
+            <!--
+            <svg viewBox="0 0 200 140" class="project-icon">
+              <rect x="20" y="60" width="160" height="70" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M20 60 L100 15 L180 60" fill="none" stroke="currentColor" stroke-width="2"/>
+              <rect x="90" y="90" width="20" height="40" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="60" cy="90" r="4" fill="currentColor"/>
+              <circle cx="140" cy="90" r="4" fill="currentColor"/>
+            </svg>
+          -->
+            <img src="assets/img/wearbnb-landing-page.png">
+          </div>
+          <div class="project-card__body">
+            <h3>wearbnb</h3>
+            <p>An Airbnb-style marketplace for booking and reviewing your favorite clothing brands. Full CRUD REST API with a React/Redux frontend.</p>
+            <ul class="project-card__tags">
+              <li>React/Redux</li><li>Node.js</li><li>Express</li><li>PostgreSQL</li><li>AWS S3</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="https://wearbnb-erik-nguyen.herokuapp.com/" target="_blank" rel="noopener">Live Site (Archived)</a>
+              <a href="https://github.com/erikphinguyen/wearbnb" target="_blank" rel="noopener">GitHub ↗</a>
             </div>
-            <br>
-            <br>
-            <br>
-            <!-- <div class="social d-flex justify-content-center">
-                <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
-            </div> -->
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__thumb" aria-hidden="true">
+            <!--
+            <svg viewBox="0 0 200 140" class="project-icon">
+              <rect x="25" y="30" width="100" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M45 90 L35 108 L60 90" fill="none" stroke="currentColor" stroke-width="2"/>
+              <rect x="90" y="60" width="85" height="50" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M150 110 L162 126 L138 110" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          -->
+            <img src="assets/img/accord-landing-page.PNG">
+          </div>
+          <div class="project-card__body">
+            <h3>Accord</h3>
+            <p>A Discord-inspired chat app with servers, channels, and live messaging via WebSockets — built end to end across the SDLC.</p>
+            <ul class="project-card__tags">
+              <li>Python/Flask</li><li>React/Redux</li><li>SQLAlchemy</li><li>Socket.IO</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="https://accord-flask-react.herokuapp.com/" target="_blank" rel="noopener">Live Site (Archived)</a>
+              <a href="https://github.com/kevin9gao/accord-flask-react-project" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__thumb" aria-hidden="true">
+            <!--
+            <svg viewBox="0 0 200 140" class="project-icon">
+              <path d="M55 45 Q40 45 40 65 Q40 85 60 85 Q55 100 40 105" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <path d="M115 45 Q100 45 100 65 Q100 85 120 85 Q115 100 100 105" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <line x1="145" y1="45" x2="145" y2="105" stroke="currentColor" stroke-width="2" stroke-dasharray="4 5"/>
+            </svg>
+          -->
+            <img src="assets/img/inspirational-quote-generator-landing-page.png">
+          </div>
+          <div class="project-card__body">
+            <h3>Inspirational Quote Generator</h3>
+            <p>A serverless quote-discovery app with a curated collection and shareable, downloadable cards.</p>
+            <ul class="project-card__tags">
+              <li>Next.js</li><li>TypeScript</li><li>GraphQL</li><li>AWS Amplify/Lambda</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="https://prod.d3q5js4u8nirl5.amplifyapp.com/" target="_blank" rel="noopener">Live Site (Archived)</a>
+              <a href="https://github.com/erikphinguyen/inspirational-quote-generator" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__thumb" aria-hidden="true">
+            <!--
+            <svg viewBox="0 0 200 140" class="project-icon">
+              <rect x="55" y="25" width="90" height="90" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+              <rect x="70" y="45" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"/>
+              <line x1="94" y1="52" x2="130" y2="52" stroke="currentColor" stroke-width="2"/>
+              <rect x="70" y="70" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M72 77 L75 81 L82 72" fill="none" stroke="currentColor" stroke-width="2"/>
+              <line x1="94" y1="77" x2="130" y2="77" stroke="currentColor" stroke-width="2"/>
+              <rect x="70" y="95" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"/>
+              <line x1="94" y1="102" x2="120" y2="102" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          -->
+            <img src="assets/img/grocery-list-landing-page.png">
+          </div>
+          <div class="project-card__body">
+            <h3>Grocery List</h3>
+            <p>A drag-and-drop to-do app for managing grocery lists, with checkboxes and reorderable priorities.</p>
+            <ul class="project-card__tags">
+              <li>React/Redux</li><li>Node.js</li><li>Express</li><li>PostgreSQL</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="https://grocery-list-kjuu.onrender.com/" target="_blank" rel="noopener">Live Site (Archived)</a>
+              <a href="https://github.com/erikphinguyen/grocery-list" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section section--skills" id="skills">
+    <div class="section__inner">
+      <p class="section__eyebrow">04 — SKILLS</p>
+      <h2 class="section__title">The toolkit.</h2>
+
+      <div class="skills__grid">
+        <div class="skill-group">
+          <h3 class="skill-group__title">Languages</h3>
+          <ul class="skill-tags">
+            <li>JavaScript</li><li>TypeScript</li><li>Python</li><li>SQL</li><li>GraphQL</li><li>HTML5</li><li>CSS3</li><li>MATLAB</li><li>DAX</li>
+          </ul>
         </div>
-    </section>
-    <!-- Footer-->
-    <!-- <footer class="footer bg-black small text-center text-white-50">
-        <div class="container px-4 px-lg-5">Copyright &copy; Your Website 2022</div>
-    </footer> -->
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <div class="skill-group">
+          <h3 class="skill-group__title">Frameworks &amp; Tools</h3>
+          <ul class="skill-tags">
+            <li>React</li><li>Redux</li><li>Node.js</li><li>Express.js</li><li>Next.js</li><li>Flask</li><li>Sequelize</li><li>SQLAlchemy</li><li>PostgreSQL</li><li>AWS</li><li>Docker</li><li>Power BI</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group__title">Engineering &amp; Quality</h3>
+          <ul class="skill-tags">
+            <li>Root Cause Analysis</li><li>Six Sigma</li><li>Lean Methodologies</li><li>Supplier Change Notices</li><li>CAPA</li><li>AutoCAD</li><li>CATIA</li><li>LabVIEW</li><li>Pro II</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group__title">Ways of Working</h3>
+          <ul class="skill-tags">
+            <li>Predictive (Traditional/Waterfall)</li><li>Adaptive (Agile/Scrum)</li><li>Pair Programming</li><li>Test-Driven Development</li><li>Object-Oriented Design</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="creds">
+        <div class="creds__col">
+          <h3 class="creds__title">Certifications</h3>
+          <ul class="creds__list">
+            <li><span>ISO 13485:2016 with FDA 21 CFR 820 Internal Auditor</span><span class="creds__meta">AXEON Corporation · Jul 2025</span></li>
+            <li><span>Advanced Quality Event Management System</span><span class="creds__meta">MasterControl · May 2024</span></li>
+          </ul>
+        </div>
+        <div class="creds__col">
+          <h3 class="creds__title">Education</h3>
+          <ul class="creds__list">
+            <li><span>Full-Stack Software Engineering</span><span class="creds__meta">App Academy · Sep 2022</span></li>
+            <li><span>B.S., Chemical Engineering</span><span class="creds__meta">Cal State Long Beach · Aug 2020</span></li>
+            <li><span>B.S., Chemical Engineering (transferred)</span><span class="creds__meta">UC Riverside · 2015–17</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section--contact" id="contact">
+    <div class="section__inner section__inner--narrow">
+      <p class="section__eyebrow">05 — CONTACT</p>
+      <h2 class="section__title">Let's build something.</h2>
+      <p class="contact__copy">
+        Always happy to talk engineering, tech, or swap hiking spots.
+      </p>
+      <div class="contact__cards">
+        <a class="contact-card" href="mailto:erikphinguyen97@gmail.com">
+          <span class="contact-card__label">EMAIL</span>
+          <span class="contact-card__value">erikphinguyen97@gmail.com</span>
+        </a>
+        <a class="contact-card" href="https://www.linkedin.com/in/erikphinguyen/" target="_blank" rel="noopener">
+          <span class="contact-card__label">LINKEDIN</span>
+          <span class="contact-card__value">/in/erikphinguyen</span>
+        </a>
+        <a class="contact-card" href="https://github.com/erikphinguyen" target="_blank" rel="noopener">
+          <span class="contact-card__label">GITHUB</span>
+          <span class="contact-card__value">/erikphinguyen</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>© <span id="year"></span> Erik Phi Nguyen</span>
+      <span class="footer__built">Built with HTML, CSS &amp; JS</span>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
 </body>
-
 </html>
